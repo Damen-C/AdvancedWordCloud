@@ -1,4 +1,3 @@
-
 # Making an advanced Word Cloud
 
 For normal word clouds, colors are randomly assigned. Advanced word clouds that map meaningful attributes (like coefficient values or token frequencies) to visual characteristics can provide a lot more insight. 
@@ -7,6 +6,10 @@ For normal word clouds, colors are randomly assigned. Advanced word clouds that 
 ## Visualization 
 Figure: Word Cloud for Amazon reviews 
 ![](https://raw.githubusercontent.com/Damen-C/AdvancedWordCloud/main/word_cloud.png)
+
+## Access to the file 
+To get the customer review file, go check the link below:   
+https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products?resource=download
 
 ## Explanation
 1. Size of the Words: The size of the words in the word cloud is directly proportional to the coefficient estimates from the linear regression model. Larger words have higher coefficient magnitudes, meaning they play a more significant role in the model's prediction. In linear regression, the coefficient represents the change in the dependent variable for a one-unit change in the predictor variable, holding all other predictors constant. So, larger words indicate predictors with larger impacts on the outcome variable.
