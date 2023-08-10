@@ -6,32 +6,16 @@ For normal word clouds, colors are randomly assigned. Advanced word clouds that 
 
 ## Visualization 
 Figure: Word Cloud for Amazon reviews 
-![]()
+![](https://raw.githubusercontent.com/Damen-C/AdvancedWordCloud/main/word_cloud.png)
 
+## Explanation
+1. Size of the Words: The size of the words in the word cloud is directly proportional to the coefficient estimates from the linear regression model. Larger words have higher coefficient magnitudes, meaning they play a more significant role in the model's prediction. In linear regression, the coefficient represents the change in the dependent variable for a one-unit change in the predictor variable, holding all other predictors constant. So, larger words indicate predictors with larger impacts on the outcome variable.
 
+2. Darkness of Color: The intensity or darkness of the color of the words is based on their frequency. Darker words appear more frequently, while lighter words are less frequent.
 
-## Conclusion
-- From analyzing Figure 1, it is evident that applying a Japanese tokenizer to BERTopic significantly impacts the topic representation. When BERTopic is not coupled with a Japanese tokenizer, the topic representations resemble complete sentences rather than individual words, resulting in a cluttered and disorganized topic word score figure. However, when we utilize a Japanese tokenizer, the results are more appropriate for our objective of detecting and visualizing topics. Figure 2 and Figure 3 exhibit the outcomes of each scenario, respectively. Therefore, incorporating a Japanese tokenizer in BERTopic enhances the topic representation and makes it more useful for topic identification and visualization.
-## Scrapping Tweets
+## In summary
+Words that are **large and dark** have both a **significant impact** on the model's prediction and are **frequently mentioned** in the dataset.  
+Words that are **small and light** have a **minor impact** on the prediction and are **mentioned less** often.  
+Words that are **large but light** have a **significant impact** on the model's prediction but are **mentioned less** frequently.  
+Words that are **small but dark** are frequently mentioned but have a **minor impact** on the prediction.
 
-#### snscrape - Scrape contents from social networking services (SNS)
-
-```http
-https://github.com/JustAnotherArchivist/snscrape
-```
-
-#### Check my tutorial on how to use snscrape to scrape twitter data: 
-```http
-https://medium.com/@cd_24/using-bertopic-to-analyze-qatar-world-cup-twitter-data-a5956c4949f1
-```
-## Japanese Stop Words
-I adopted the list of Japanese stop words from the following:   
-```http
-https://github.com/stopwords-iso/stopwords-ja
-```
-## Code
-The codes programmed in this project are displayed in this repository. Feel free to check and use them. 
-## Relevant Materials
-If you are interested in learning more about how to develop a Japanese tokenizer and the necessity of using a tokenizer when utilizing BERTopic for analyzing Japanese texts, I recommend reading my post on Medium. In the article, I delve into the importance of tokenization in natural language processing and explain how Japanese language's unique characteristics require a specific tokenizer to ensure accurate analysis. Furthermore, I outline the steps involved in building a Japanese tokenizer and provide detailed code snippets for your reference. 
-
-- [Using BERTopic on Japanese Texts](https://medium.com/@cd_24/using-bertopic-on-japanese-texts-99d3ac1f05a2)
