@@ -1,6 +1,6 @@
 # Making an advanced Word Cloud
 
-For normal word clouds, colors are randomly assigned. Advanced word clouds that map meaningful attributes (like coefficient values or token frequencies) to visual characteristics can provide a lot more insight. 
+For normal word clouds, colors are randomly assigned. Advanced word clouds that map meaningful attributes (like coefficient values and token frequencies together) to visual characteristics can provide a lot more insight. 
 
 
 ## Visualization 
